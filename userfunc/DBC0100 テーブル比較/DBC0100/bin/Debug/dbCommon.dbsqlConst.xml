@@ -1,0 +1,38 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+dbCommon.dbsqlConst
+</name>
+</assembly>
+<members>
+<member name="T:dbCommon.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:dbCommon.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:dbCommon.My.Resources.Resources.Culture">
+<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="M:dbCommon.sqlsvrSqlUtil.getTableDesign(System.String,System.Int32)">
+ <summary>
+ テーブル定義取得
+ 引数：
+ TableName:テーブル名
+ ObjectKbn:テーブル=0 | ビュー=1 | その他の場合テーブルと同じ判定
+ </summary>
+ <param name="TableName"></param>
+ <param name="ObjectKbn">テーブル=0 | ビュー=1 | その他の場合テーブルと同じ判定</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

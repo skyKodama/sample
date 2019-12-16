@@ -1,0 +1,54 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+dbCommon.dbsqlConst
+</name>
+</assembly>
+<members>
+<member name="T:dbCommon.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:dbCommon.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:dbCommon.My.Resources.Resources.Culture">
+<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="M:dbCommon.sqlsvrSqlUtil.getTableDesign(System.String,System.Int32)">
+ <summary>
+ テーブル定義取得
+ 引数：
+ TableName:テーブル名
+ ObjectKbn:テーブル=0 | ビュー=1 | その他の場合テーブルと同じ判定
+ </summary>
+ <param name="TableName"></param>
+ <param name="ObjectKbn">テーブル=0 | ビュー=1 | その他の場合テーブルと同じ判定</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:dbCommon.sqlsvrSqlUtil.GetViewDifine(skysystem.common.DBconnection,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="dbc"></param>
+ <param name="ProcName"></param>
+ <returns></returns>
+</member>
+<member name="M:dbCommon.sqlsvrSqlUtil.chkViewTextAdd(System.String,System.Int32,System.Int32)">
+ <summary>
+ インデックスを追加する用。レベル制御は上層で行う
+ </summary>
+ <param name="prmAftReturn">直前改行フラグ⇒直前で改行しているなら、自分は改行しなくてもよい</param>
+ <param name="tempText"></param>
+ <returns>0:そのまま追加　1:自分の直前に改行追加　2：自分の直前でレベル加算　3：自分の直後でレベル加算　4：自分の直前でレベル減算　5：自分の直後でレベル減算 9:次の句と合わせて判定(Joinなど)</returns>
+</member>
+</members>
+</doc>

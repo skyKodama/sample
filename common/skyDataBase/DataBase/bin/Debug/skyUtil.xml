@@ -1,0 +1,925 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+skyUtil
+</name>
+</assembly>
+<members>
+<member name="T:skysystem.common.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:skysystem.common.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:skysystem.common.My.Resources.Resources.Culture">
+<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="M:skysystem.common.dailogUtil.OpenFileDialog(System.String,System.String)">
+ <summary>
+ ファイルOpenダイアログボックスの表示
+ </summary>
+ <param name="szDefaultPath">初期ディレクトリ(省略時はC:\)</param>
+ <param name="title">フォームタイトル</param>
+ <returns>ファイル名</returns>
+ <remarks>キャンセル時は空値を戻す</remarks>
+</member>
+<member name="T:skysystem.common.MessageUtil">
+ <summary>
+  共通メッセージライブラリ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.DB_ShowMsg(Devart.Data.Universal.UniConnection,System.Object,System.Int32,System.String,System.String)">
+ <summary>
+ 単一メッセージ表示(コネクションあり)
+ </summary>
+ <param name="con">コネクション</param>
+ <param name="objCTG">メッセージカテゴリ</param>
+ <param name="intID">メッセージID</param>
+ <param name="strText">メッセージ内容(接頭)</param>
+ <param name="strTitle">メッセージタイトル</param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowMsgWithCon(Devart.Data.Universal.UniConnection,System.Object,System.Int32)">
+ <summary>
+ メッセージ表示メソッド(コネクションあり)
+ </summary>
+ <param name="con">コネクション</param>
+ <param name="objCTG">メッセージカテゴリ</param>
+ <param name="intID">メッセージID</param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowMsgWithCon(Devart.Data.Universal.UniConnection,System.Object,System.Int32,System.String)">
+ <summary>
+ メッセージ表示メソッド(コネクションあり)
+ </summary>
+ <param name="con">コネクション</param>
+ <param name="objCTG">メッセージカテゴリ</param>
+ <param name="intID">メッセージID</param>
+ <param name="strText">メッセージ内容(前頭句)</param>
+ <remarks>メッセージタイトルはシステム名を利用</remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowMsgWithCon(Devart.Data.Universal.UniConnection,System.Object,System.Int32,System.String,System.String)">
+ <summary>
+ メッセージ表示メソッド(コネクションあり)
+ </summary>
+ <param name="con">コネクション</param>
+ <param name="objCTG">メッセージカテゴリ</param>
+ <param name="intID">メッセージID</param>
+ <param name="strText">メッセージ内容(前頭句)</param>
+ <param name="strTitle">メッセージタイトル</param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.PBFBLN_QUser(Devart.Data.Universal.UniConnection,System.Object,System.Int32)">
+ <summary>
+ 問合せメッセージ表示(コネクションあり)
+ </summary>
+ <param name="con">コネクション</param>
+ <param name="objCTG">メッセージカテゴリ</param>
+ <param name="intID">メッセージID</param>
+ <Retuen>True：はい押下　False：いいえ押下</Retuen>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.PBFBLN_QUser(Devart.Data.Universal.UniConnection,System.Object,System.Int32,System.String)">
+ <summary>
+ 問合せメッセージ表示(コネクションあり)
+ </summary>
+ <param name="con">コネクション</param>
+ <param name="objCTG">メッセージカテゴリ</param>
+ <param name="intID">メッセージID</param>
+ <param name="strText">メッセージ内容(前頭句)</param>
+ <Retuen>True：はい押下　False：いいえ押下</Retuen>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowUserMsgWithCon(Devart.Data.Universal.UniConnection,System.Object,System.Int32,System.String)">
+ <summary>
+ 問合せメッセージ表示(コネクションあり)
+ </summary>
+ <param name="con">コネクション</param>
+ <param name="objCTG">メッセージカテゴリ</param>
+ <param name="intID">メッセージID</param>
+ <param name="strText">メッセージ内容(前頭句)</param>
+ <Retuen>True：はい押下　False：いいえ押下</Retuen>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.DB_QUser(Devart.Data.Universal.UniConnection,System.Object,System.Int32,System.String,System.String)">
+ <summary>
+ 問合せメッセージ表示(コネクションあり)
+ </summary>
+ <param name="con">コネクション</param>
+ <param name="objCTG">メッセージカテゴリ</param>
+ <param name="intID">メッセージID</param>
+ <param name="strText">メッセージ内容(前頭句)</param>
+ <param name="strTitle">メッセージタイトル</param>
+ <Retuen>True：はい押下　False：いいえ押下</Retuen>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowMsgQUserInsert(Devart.Data.Universal.UniConnection,System.String,System.String)">
+ <summary>
+ 登録用問合せメッセージ(新規時)
+ </summary>
+ <param name="con">コネクション</param>
+ <param name="strText">メッセージ内容(接頭句)</param>
+ <param name="strTitle">メッセージタイトル</param>
+ <Retuen>True：はい押下　False：いいえ押下</Retuen>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowMsgQUserUpdate(Devart.Data.Universal.UniConnection,System.String,System.String)">
+ <summary>
+ 登録用問合せメッセージ(更新時)
+ </summary>
+ <param name="con">コネクション</param>
+ <param name="strText">メッセージ内容(接頭句)</param>
+ <param name="strTitle">メッセージタイトル</param>
+ <Retuen>True：はい押下　False：いいえ押下</Retuen>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowMsgQUserDelete(Devart.Data.Universal.UniConnection,System.String,System.String)">
+ <summary>
+ 登録用問合せメッセージ(削除時)
+ </summary>
+ <param name="con">コネクション</param>
+ <param name="strText">メッセージ内容(接頭句)</param>
+ <param name="strTitle">メッセージタイトル</param>
+ <Retuen>True：はい押下　False：いいえ押下</Retuen>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowMsgQUserExit(Devart.Data.Universal.UniConnection,System.String,System.String)">
+ <summary>
+ 終了時確認メッセージ
+ </summary>
+ <param name="con">コネクション</param>
+ <param name="strText">メッセージ内容(接頭句)</param>
+ <param name="strTitle">メッセージタイトル</param>
+ <Retuen>True：はい押下　False：いいえ押下</Retuen>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowMSG_NODATA(Devart.Data.Universal.UniConnection)">
+ <summary>
+ 対象となるデータが存在しません。(コネクション有)
+ </summary>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowErrorMsg(System.String,System.String)">
+ <summary>
+ エラーメッセージ表示(コネクションなし)
+ </summary>
+ <param name="strError">メッセージ内容</param>
+ <param name="strTitle">メッセージテキスト</param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowWarningMsg(System.String,System.String)">
+ <summary>
+  警告メッセージ表示(コネクションなし)
+ </summary>
+ <param name="strWarning">メッセージ内容</param>
+ <param name="strTitle">メッセージテキスト</param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowWarningUserMsg(System.String,System.String)">
+ <summary>
+  警告メッセージ問合せ表示(コネクションなし)
+ </summary>
+ <param name="strWarning">メッセージ内容</param>
+ <param name="strTitle">メッセージテキスト</param>
+ <Retuen>True：はい押下　False：いいえ押下</Retuen>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowInfoMsg(System.String,System.String)">
+ <summary>
+  情報メッセージ表示(コネクションなし)
+ </summary>
+ <param name="strInfo">メッセージ内容</param>
+ <param name="strTitle">メッセージテキスト</param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowUserMsg(System.String,System.String)">
+ <summary>
+  情報メッセージ問合せ表示(コネクションなし)
+ </summary>
+ <param name="strInfo">メッセージ内容</param>
+ <param name="strTitle">メッセージテキスト</param>
+ <Retuen>True：はい押下　False：いいえ押下</Retuen>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowInfoMsgRegistIns(System.String,Devart.Data.Universal.UniConnection)">
+ <summary>
+ XXXXが登録されました。
+ </summary>
+ <param name="prmText"></param>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowInfoMsgRegistUpd(System.String,Devart.Data.Universal.UniConnection)">
+ <summary>
+ XXXXを修正されました
+ </summary>
+ <param name="prmText"></param>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowInfoMsgOutPutData(Devart.Data.Universal.UniConnection)">
+ <summary>
+ データを出力しました
+ </summary>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowErrorMsgMustISelect(System.String,Devart.Data.Universal.UniConnection)">
+ <summary>
+ XXXXXを選択してください。
+ </summary>
+ <param name="prmText"></param>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowErrorMsgMustInput(System.String,Devart.Data.Universal.UniConnection)">
+ <summary>
+ この項目は必須入力です。正しい値を入力して下さい。
+ </summary>
+ <param name="prmText"></param>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowErrorMsgNotExistTemplate(System.String,Devart.Data.Universal.UniConnection)">
+ <summary>
+ テンプレートファイルが見つかりません。
+ </summary>
+ <param name="prmText"></param>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowErrorMsgNoItemData(Devart.Data.Universal.UniConnection)">
+ <summary>
+ 有効な明細が存在しません。
+ </summary>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowErrorMsgNoData(Devart.Data.Universal.UniConnection)">
+ <summary>
+ 該当データが存在しません。
+ </summary>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowErrorMsgNoResult(Devart.Data.Universal.UniConnection)">
+ <summary>
+ 1件以上結果を照会してください。
+ </summary>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowErrorMsgNoDataRegist(Devart.Data.Universal.UniConnection)">
+ <summary>
+ 登録対象となるデータが存在しません。
+ </summary>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowErrorMsgDaySize(System.String,Devart.Data.Universal.UniConnection)">
+ <summary>
+ MSG：日付の大小が異なります。"
+ </summary>
+ <param name="prmText">前頭句</param>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowErrorMsgOverLap(System.String,Devart.Data.Universal.UniConnection)">
+ <summary>
+ MSG：すでに同一番号が存在します"
+ </summary>
+ <param name="prmText">前頭句</param>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowErrorItemCheckIsNothing(System.String,Devart.Data.Universal.UniConnection)">
+ <summary>
+ MSG：１つ以上チェックをおこなってください"
+ </summary>
+ <param name="prmText">前頭句</param>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowErrorMsgMustZeroOver(System.String)">
+ <summary>
+ MSG：ゼロ以上を指定してください"
+ </summary>
+ <param name="prmText">前頭句</param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowErrorItemNoSelect(Devart.Data.Universal.UniConnection)">
+ <summary>
+ MSG：明細行を選択してください。"
+ </summary>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowErrorActionStop(Devart.Data.Universal.UniConnection)">
+ <summary>
+ MSG：エラーが発生しました。処理を中止します。
+ </summary>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowUserMsgAction(System.String,Devart.Data.Universal.UniConnection)">
+ <summary>
+ MSG：XXXXを実行します。よろしいですか？"
+ </summary>
+ <param name="prmText">前頭句</param>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowUserMsgOutPut(System.String,Devart.Data.Universal.UniConnection)">
+ <summary>
+ MSG：XXXXを出力します。よろしいですか？"
+ </summary>
+ <param name="prmText">前頭句</param>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.MessageUtil.ShowInfoMsgComplete(System.String,Devart.Data.Universal.UniConnection)">
+ <summary>
+ MSG：XXXXを完了しました。"
+ </summary>
+ <param name="prmText">前頭句</param>
+ <param name="con"></param>
+ <remarks></remarks>
+</member>
+<member name="T:skysystem.common.TabManager">
+ <summary>
+  タブコントロール制御クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.TabManager.#ctor(System.Windows.Forms.TabControl)">
+ <summary>
+ TabPageManagerクラスのインスタンスを作成する
+ </summary>
+ <param name="crl">基になるTabControlオブジェクト</param>
+</member>
+<member name="M:skysystem.common.TabManager.ChangeTabPageVisible(System.Int32,System.Boolean)">
+ <summary>
+ TabPageの表示・非表示を変更する
+ </summary>
+ <param name="index">変更するTabPageのIndex番号</param>
+ <param name="v">表示するときはTrue。
+ 非表示にするときはFalse。</param>
+</member>
+<member name="T:skysystem.common.SQLBulider">
+ <summary>
+ SQL文Builderクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:skysystem.common.SQLBulider.CommandText">
+ <summary>
+ 生成されたSQL文を取得
+ </summary>
+ <value>SQL文</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:skysystem.common.SQLBulider.Table">
+ <summary>
+ テーブル名を定義
+ </summary>
+ <value>SQL：テーブル名</value>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SQLBulider.add(System.Object,System.String,System.Byte)">
+ <summary>
+ Addメソッド
+ </summary>
+ <param name="fieldElement">フィールド名</param>
+ <param name="parameterElement">値(String型)</param>
+ <param name="bytDeco">クォーテーション付与するかどうか(デフォルトは付与する)</param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SQLBulider.add(System.Object,System.Boolean)">
+ <summary>
+ Addメソッド
+ </summary>
+ <param name="fieldElement">フィールド名</param>
+ <param name="parameterElement">値(Boolean型)</param>
+ <remarks>20131009_1 </remarks>
+</member>
+<member name="M:skysystem.common.SQLBulider.add(System.Object,System.Int32)">
+ <summary>
+ Addメソッド
+ </summary>
+ <param name="fieldElement">フィールド名</param>
+ <param name="parameterElement">値(Integer型)</param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SQLBulider.add(System.Object,System.Byte)">
+ <summary>
+ Addメソッド
+ </summary>
+ <param name="fieldElement">フィールド名</param>
+ <param name="parameterElement">値(Byte型)</param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SQLBulider.add(System.Object,System.Int64)">
+ <summary>
+ Addメソッド
+ </summary>
+ <param name="fieldElement">フィールド名</param>
+ <param name="parameterElement">値(Long型)</param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SQLBulider.add(System.Object,System.Decimal)">
+ <summary>
+ Addメソッド
+ </summary>
+ <param name="fieldElement">フィールド名</param>
+ <param name="parameterElement">値(Decimal型)</param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SQLBulider.add(System.Object,System.DateTime)">
+ <summary>
+ Addメソッド
+ </summary>
+ <param name="fieldElement">フィールド名</param>
+ <param name="parameterElement">値(Date型)</param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SQLBulider.add(System.Object,System.Double)">
+ <summary>
+ Addメソッド
+ </summary>
+ <param name="fieldElement">フィールド名</param>
+ <param name="parameterElement">値(Double型)</param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SQLBulider.addWhere(System.String)">
+ <summary>
+ Where句の追加
+ </summary>
+ <param name="szWhere">SQL：Where句</param>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SQLBulider.buildIns">
+ <summary>
+ SQLインサート文を生成する
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SQLBulider.buildUpd">
+ <summary>
+ SQLアップデート文を生成する
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:skysystem.common.SystemConst">
+ <summary>
+ システム定数一覧
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:skysystem.common.SystemConst.PBCSTR_VERTICAL">
+ <summary>
+ システム定数：縦棒
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:skysystem.common.SystemConst.PBCSTR_SPACE_H">
+ <summary>
+ システム定数：スペース(半角)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:skysystem.common.SystemConst.PBCSTR_SPACE">
+ <summary>
+ システム定数：スペース(全角)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:skysystem.common.SystemConst.PBCSTR_TITLE_MSG">
+ <summary>
+ システム定数：システム名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:skysystem.common.SystemConst.PBCSTR_TITLE_SHORT">
+ <summary>
+ システム定数：システム名(略名)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:skysystem.common.SystemConst.C_SYSTEMPRM">
+ <summary>
+ システム定数：システムパラメータファイル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:skysystem.common.SystemConst.C_FTPCONFIG">
+ <summary>
+ システム定数：システムFTP構成ファイル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:skysystem.common.SystemConst.C_USRCONF_XML">
+ <summary>
+ システム定数：ﾕｰｻﾞｰ構成ファイル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:skysystem.common.SystemConst.C_TABLEHIST_XML">
+ <summary>
+ システム定数：ローカルオプション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:skysystem.common.SystemConst.KAZEI">
+ <summary>
+ 課税区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:skysystem.common.SystemConst.ZEIK">
+ <summary>
+ 税込区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:skysystem.common.SystemConst.CVT_KIND">
+ <summary>
+ 値変換
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:skysystem.common.SystemConst.MOVE_TP">
+ <summary>
+ 受払種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:skysystem.common.SystemConst.MOVE_KB">
+ <summary>
+ 受払区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:skysystem.common.SystemConst.FUNC_TP">
+ <summary>
+ 機能種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:skysystem.common.SystemConst.ONFLG">
+ <summary>
+ OK/NG
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:skysystem.common.SystemConst.OFFLG">
+ <summary>
+ ON.OFF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:skysystem.common.SystemConst.Round">
+ <summary>
+ 四捨五入
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:skysystem.common.SystemConst.COM_Kbn">
+ <summary>
+ 変更履歴処理区分
+ </summary>
+</member>
+<member name="T:skysystem.common.SystemUtil">
+ <summary>
+ システム共通ユーティリティー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:skysystem.common.SystemUtil.CHAR_SIZE">
+ <summary>
+ 全角・半角・混在の列挙対
+ </summary>
+ <remarks>全角・半角・混在の列挙対</remarks>
+</member>
+<member name="T:skysystem.common.SystemUtil.FILEKIND">
+ <summary>
+ ファイアログボックスのファイルフィルター"
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:skysystem.common.SystemUtil.CHK">
+ <summary>
+ チェックの有無
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.GetCmbText(System.String)">
+ <summary>
+ コンボのテキストの"｜"右文字列を取得
+ </summary>
+ <param name="strValue"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.GetCmbCode(System.String)">
+ <summary>
+ コンボのテキストの"｜"左文字列を取得
+ </summary>
+ <param name="strValue"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.PBCStr(System.Object,System.String)">
+ <summary>
+ 値変換(String)
+ </summary>
+ <param name="objVal">変換する値</param>
+ <param name="rtnValue">空値の場合の戻り値</param>
+ <returns>String戻値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.PBCint(System.Object,System.Int32)">
+ <summary>
+ 値変換(Integer)
+ </summary>
+ <param name="objVal">変換する値</param>
+ <param name="rtnValue">空値の場合の戻り値</param>
+ <returns>Integer戻り値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.PBCBool(System.Object,System.Boolean)">
+ <summary>
+ 値変換(Boolean)
+ </summary>
+ <param name="objVal">変換する値</param>
+ <param name="rtnValue">空値の場合の戻り値</param>
+ <returns>Boolean戻り値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.PBCbyt(System.Object,System.Byte)">
+ <summary>
+ 値変換(Byte)
+ </summary>
+ <param name="objVal">変換する値</param>
+ <param name="rtnValue">空値の場合の戻り値</param>
+ <returns>Byte戻り値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.PBClng(System.Object,System.Int64)">
+ <summary>
+ 値変換(Long)
+ </summary>
+ <param name="objVal">変換する値</param>
+ <param name="rtnValue">空値の場合の戻り値</param>
+ <returns>Long戻り値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.PBCdec(System.Object,System.Decimal)">
+ <summary>
+ 値変換(Decimal)
+ </summary>
+ <param name="objVal">変換する値</param>
+ <param name="rtnValue">空値の場合の戻り値</param>
+ <returns>Decimal戻り値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.PBCdbl(System.Object,System.Double)">
+ <summary>
+ 値変換(Double)
+ </summary>
+ <param name="objVal">変換する値</param>
+ <param name="rtnValue">空値の場合の戻り値</param>
+ <returns>Double戻り値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.PB_ChkNUll(System.Object,System.Boolean)">
+ <summary>
+  NULLチェック
+ </summary>
+ <param name="objVal">チェックする値</param>
+ <param name="bln">空値以外の場合の戻り値</param>
+ <returns>True：Null　False:Nukk以外</returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.doCalHASU2(System.Double,System.Int32,skysystem.common.SystemConst.Round)">
+ <summary>
+ 端数処理(Double)
+ </summary>
+ <param name="dblValue">丸め対象値</param>
+ <param name="intDigits">戻り値の有効桁数の精度</param>
+ <param name="bytHASU">端数処理区分</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.PB_IsDate(System.String)">
+ <summary>
+ "日付かどうかを調べる
+ </summary>
+ <param name="szObj">検証する値</param>
+ <returns>True：日付です　False：日付でない</returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.PBGetDate(System.Int32,System.Int32,System.Int32,System.Int32,Microsoft.VisualBasic.DateInterval,System.String)">
+ <summary>
+ 日付の生成(年月)
+ </summary>
+ <param name="inY">年</param>
+ <param name="inM">月</param>
+ <param name="inD">日</param>
+ <param name="inAddDate">加算値</param>
+ <param name="interval">インターバル</param>
+ <param name="szFormat">戻り値のフォーマット</param>
+ <returns>日付(文字)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.getDate(System.String,System.Int32,Microsoft.VisualBasic.DateInterval,System.String)">
+ <summary>
+  日付の生成(年月日)
+ </summary>
+ <param name="szYMD">日付(yyyyMMdd形式)</param>
+ <param name="inAddDate">加算値</param>
+ <param name="interval">インターバル</param>
+ <param name="szFormat">戻り値のフォーマット</param>
+ <returns>日付(文字)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.getDate(System.DateTime,System.Int32,Microsoft.VisualBasic.DateInterval,System.String)">
+ <summary>
+  日付の生成(年月日)
+ </summary>
+ <param name="prmDate">日付</param>
+ <param name="inAddDate">加算値</param>
+ <param name="interval">インターバル</param>
+ <param name="szFormat">戻り値のフォーマット</param>
+ <returns>日付(文字)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.PBGetCngDate(System.String)">
+ <summary>
+ 日付の書式変換
+ </summary>
+ <param name="szYMD">変換する文字列</param>
+ <returns>変換後の日付文字列</returns>
+ <remarks>yyyy/MM/dd→yyyyMMdd</remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.getCngDate(System.String,System.String)">
+ <summary>
+ 日付変換(yyyyMMdd→yyyy/MM/dd)"
+ </summary>
+ <param name="szYMD"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.getLastDate(System.String,System.String)">
+ <summary>
+ 月末を求める
+ </summary>
+ <param name="prmDate">yyyy/MM/dd形式</param>
+ <param name="szFormat">戻り値となる日付の書式</param>
+ <returns>日付の文字列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.PB_GetLastDate(System.Int32,System.Int32,System.String)">
+ <summary>
+ 月末を求める
+ </summary>
+ <param name="inY">年</param>
+ <param name="inM">月</param>
+ <param name="szFormat">戻り値となる日付の書式</param>
+ <returns>日付の文字列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.PBGetTimeRemit(System.DateTime,System.DateTime,System.Boolean)">
+ <summary>
+ 残り時間を求める
+ </summary>
+ <param name="dtNow">現在の時刻</param>
+ <param name="dtTarget">ターゲットとなる時刻</param>
+ <param name="boGuide">戻り値の設定(True:ガイド False:時刻)</param>
+ <returns>String(時刻orガイドorﾌﾞﾗﾝｸ)</returns>
+ <remarks>
+ <para>boGuide = Ture の場合(ガイド)</para>
+ <para>1分以下の場合XX秒で戻す（0～59秒）</para>
+ <para>1分以上で1時間以下の場合、XX分で戻す（1～59分）</para>
+ <para>1時間以上で一日以下の場合、XX時間で戻す（1～24時間）</para>
+ <para>一日以上の場合、XX日で戻す（1日～）</para>
+ </remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.getWareki(System.DateTime,System.String)">
+ <summary>
+ 和暦を求める
+ </summary>
+ <param name="prmDate">yyyy/MM/dd形式</param>
+ <param name="szFormat"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.getWareki(System.String,System.String)">
+ <summary>
+ 和暦を求める
+ </summary>
+ <param name="prmDate">yyyy/MM/dd形式</param>
+ <param name="szFormat"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.SaveFileDialog(System.String@,System.String@,System.String,skysystem.common.SystemUtil.FILEKIND)">
+ <summary>
+ ファイル保存ダイアログボックスの表示
+ </summary>
+ <param name="szDefaltFileName">ファイル名</param>
+ <param name="szFileDir">ファイルディレクトリ</param>
+ <param name="szDefaultPath">初期ディレクトリ</param>
+ <param name="Filter">ファイル種類(初期値：XLS)</param>
+ <returns>Boolean(成功・失敗)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.OpenFileDialog(System.String,skysystem.common.SystemUtil.FILEKIND,System.String,System.String)">
+ <summary>
+ ファイルOpenダイアログボックスの表示
+ </summary>
+ <param name="szDefaultPath">初期ディレクトリ(省略時はC:\)</param>
+ <param name="Filter">ファイル種類(初期値：XLS)</param>
+ <param name="title">フォームタイトル</param>
+ <returns>ファイル名</returns>
+ <remarks>キャンセル時は空値を戻す</remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.FolderDialog(System.String,System.String)">
+ <summary>
+ フォルダの参照ダイアログ表示
+ </summary>
+ <param name="szDefaultPath">初期設定パス</param>
+ <param name="szTitle">ファイアログタイトル</param>
+ <returns>選択したフォルダ参照パス</returns>
+ <remarks>キャンセルの場合は空値</remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.GetFileList(System.String,System.Collections.ArrayList)">
+ <summary>
+ 対象ディレクトリのファイル一覧を戻す
+ </summary>
+ <param name="szPath">対象ディレクトリパス</param>
+ <param name="arySerachPattarn">検索対象ファイル</param>
+ <returns>ファイルの一覧</returns>
+ <remarks></remarks>
+</member>
+<member name="M:skysystem.common.SystemUtil.GetWantedByte(System.String,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ 指定バイト分文字列を取り出す
+ </summary>
+ <param name="strText">ターゲットの文字列</param>
+ <param name="intStart">開始位置</param>
+ <param name="intEnd">終了位置</param>
+ <param name="intMultiLine">改行排除 0:許可　1:排除</param>
+ <returns>編集後の文字列</returns>
+ <remarks>
+ ２Byteの文字の場合、指定Byte数より１Byte切って返す
+  Ex) test = "あかさ"
+ "あかさ" = PB_GetWantedString(test, 0, 5)
+ "あか" = PB_GetWantedString(test, 0, 4)
+  "かさ" = PB_GetWantedString(test, 1, 4)
+ </remarks>  
+</member>
+<member name="M:skysystem.common.SystemUtil.doEncrypt(System.String,System.String)">
+ <summary>
+ 文字列を暗号化する
+ </summary>
+ <param name="sourceString">暗号化する文字列</param>
+ <param name="password">暗号化に使用するパスワード</param>
+ <returns>暗号化された文字列</returns>
+</member>
+<member name="M:skysystem.common.SystemUtil.doDecrypt(System.String,System.String)">
+ <summary>
+ 暗号化された文字列を復号化する
+ </summary>
+ <param name="sourceString">暗号化された文字列</param>
+ <param name="password">暗号化に使用したパスワード</param>
+ <returns>復号化された文字列</returns>
+</member>
+<member name="M:skysystem.common.SystemUtil.GenerateKeyFromPassword(System.String,System.Int32,System.Byte[]@,System.Int32,System.Byte[]@)">
+ <summary>
+ パスワードから共有キーと初期化ベクタを生成する
+ </summary>
+ <param name="password">基になるパスワード</param>
+ <param name="keySize">共有キーのサイズ（ビット）</param>
+ <param name="key">作成された共有キー</param>
+ <param name="blockSize">初期化ベクタのサイズ（ビット）</param>
+ <param name="iv">作成された初期化ベクタ</param>
+</member>
+<member name="T:skysystem.common.txtController">
+ <summary>
+ テキスト生成クラス
+ </summary>
+ <remarks>使用不可</remarks>
+</member>
+</members>
+</doc>

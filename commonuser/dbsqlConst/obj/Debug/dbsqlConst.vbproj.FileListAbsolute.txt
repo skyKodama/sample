@@ -1,0 +1,9 @@
+C:\Job\skysystem\Practice\03 PGM\02_DB_Console\app\dbCommon.dbsqlConst.dll
+C:\Job\skysystem\Practice\03 PGM\02_DB_Console\app\dbCommon.dbsqlConst.pdb
+C:\Job\skysystem\Practice\03 PGM\02_DB_Console\app\dbCommon.dbsqlConst.xml
+C:\Job\skysystem\Practice\03 PGM\02_DB_Console\commonuser\dbsqlConst\obj\Debug\dbsqlConst.vbprojResolveAssemblyReference.cache
+C:\Job\skysystem\Practice\03 PGM\02_DB_Console\commonuser\dbsqlConst\obj\Debug\dbCommon.Resources.resources
+C:\Job\skysystem\Practice\03 PGM\02_DB_Console\commonuser\dbsqlConst\obj\Debug\dbsqlConst.vbproj.GenerateResource.Cache
+C:\Job\skysystem\Practice\03 PGM\02_DB_Console\commonuser\dbsqlConst\obj\Debug\dbCommon.dbsqlConst.dll
+C:\Job\skysystem\Practice\03 PGM\02_DB_Console\commonuser\dbsqlConst\obj\Debug\dbCommon.dbsqlConst.xml
+C:\Job\skysystem\Practice\03 PGM\02_DB_Console\commonuser\dbsqlConst\obj\Debug\dbCommon.dbsqlConst.pdb

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<SKY>
+  <SKY_DB>
+                --2:ORACLE 1:SqlServer 0:Postgres
+		<DBTYPE>1</DBTYPE>
+                <CONNECTION>Data Source=172.17.2.203;Initial Catalog=LIVE_KIHONDB;User ID=sa;Password=skysystem;Connection Lifetime=180</CONNECTION>
+                <NAME>SKYテストサーバー</NAME>
+                <PATH>'public','comp01','log'</PATH>
+  </SKY_DB>
+  <SKY_MAIL>
+    <HOST>smtp.gmail.com</HOST>
+    <PORT>587</PORT>
+  </SKY_MAIL>
+  <SKY_LOG>
+                --2:ORACLE 1:SqlServer 0:Postgres
+		<DBTYPE>1</DBTYPE>
+                <CON>idBEscl+EDsyxff6JVNwEDxA18VxKr1byK0C9daLMYeqvez+7s7P6GLXVM2wUuygsIbh+2nykUnuoTj8jCqEF6MwQm1zAcyJZFAaDZF3mWJOoxia0+Oc8MJ3F7ZaV6yM</CON>
+                <LEVEL>INFO, ERROR, DEBUG</LEVEL>
+                <APPENDER>DB</APPENDER>
+  </SKY_LOG>
+  <SKY_FORM>
+		--TABﾌｫｰﾑ 0:無効 1:有効
+		<FORMTAB>1</FORMTAB>
+		--MENUﾗｰｼﾞICON 0:無効 1:有効
+		<MENULICON>0</MENULICON></SKY_FORM>
+  <SKY_RFID>
+    <IP>172.17.30.40</IP>
+    <PORT>9100</PORT>
+    <TIMEOUT>500</TIMEOUT>
+  </SKY_RFID>
+  <SKY_PRINTER>
+    --ダイアログ表示 0：非表示 1：表示 9:プレビュー表示(未設定、不正な値はダイアログ表示)
+    <SHOW_DIALOG>0</SHOW_DIALOG>
+    <NAME>DocuCentre-V C3375 T2</NAME>
+  </SKY_PRINTER>
+  <SKY_PROGRAM>
+    <MAX_ROWS>
+    </MAX_ROWS>
+  </SKY_PROGRAM>
+  <SKY_CONTROL>
+  </SKY_CONTROL>
+  <SYSTEM>		
+	  -- システム タイトル
+	  <TITLE>KDN SYSTEM</TITLE></SYSTEM>
+  <TIMERSPAN>
+    <INTERVAL>3</INTERVAL>
+    <!-- sec / min / hour / day -->
+    <UNIT>sec</UNIT>
+  </TIMERSPAN>
+</SKY>
